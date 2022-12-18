@@ -6,10 +6,25 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="app">
-    <comp-child></comp-child>
-    <comp-child></comp-child>
-  </div>
+  <comp-child>
+    <header slot="header">
+      Hello Vue.js!
+    </header>
+    Vue.js는 JavaScript 프레임워크입니다.
+  </comp-child>
+  <section class="comp-child">
+    <slot name="header">
+      <header>
+        디폴트 타이틀
+      </header>
+    </slot>
+    <div class="content">
+      <slot>디폴트 콘텐츠</slot>
+    </div>
+    <slot name="footer">
+      <!-- 없다면 아무 것도 출력하지 않습니다. -->
+    </slot>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
           integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="

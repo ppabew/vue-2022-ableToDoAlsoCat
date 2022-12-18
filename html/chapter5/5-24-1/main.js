@@ -1,5 +1,5 @@
 Vue.component('comp-child', {
-  template: '<p>dd</p>',
+  template: '<p></p>',
 })
 
 
