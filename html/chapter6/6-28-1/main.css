@@ -1,0 +1,26 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+div {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.demo-enter-active, .demo-leave-active {
+  transition: opacity 1s, transform 1s;
+  color: green;
+}
+
+.demo-enter {
+  opacity: 0;
+  color: red;
+  transform: translateX(-40px);
+}
+
+.demo-leave-to {
+  opacity: 0;
+  color: red;
+  transform: translateY(-10px);
+}

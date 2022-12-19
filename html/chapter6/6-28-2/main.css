@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+.demo-enter-active, .demo-leave-active {
+  transition: opacity 1s, transform 1s;
+  color: green;
+  position: absolute;
+}
+
+.demo-enter {
+  opacity: 0;
+  color: red;
+  transform: translateX(-40px);
+}
+
+.demo-leave-to {
+  opacity: 0;
+  color: red;
+  transform: translateY(40px);
+}
+
+
+.test-enter-active, .test-leave-active {
+  transition: opacity 1s, transform 1s;
+  color: green;
+  position: absolute;
+}
+
+.test-enter {
+  opacity: 0;
+  color: red;
+  transform: translateX(-40px);
+}
+
+.test-leave-to {
+  opacity: 0;
+  color: red;
+  transform: translateY(40px);
+}
+
+div{
+  display: flex;
+  justify-content: center
+}
+

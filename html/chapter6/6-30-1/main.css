@@ -1,0 +1,11 @@
+.v-move {
+  transition: transform 1s;
+}
+
+.v-enter-active, .v-leave-active, .v-move {
+  transition: opacity 1s, transform 1s;
+}
+
+.v-move:not(.v-leave-active) {
+  transition: transform 1s;
+}
