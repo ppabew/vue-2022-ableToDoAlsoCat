@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js App</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="app">
+    <button v-on:click="toggle=!toggle">변경하기</button>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <!-- SVG 요소에 트랜지션 사용하기 -->
+      <transition>
+        <my-circle v-bind:fill="fill" v-bind:key="fill"></my-circle>
+      </transition>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <circle id="cir1" cx="80" cy="75" r="50" fill="lightpink"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <circle cx="80" cy="75" r="50" fill="red"/>
+    </svg>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+</html>
