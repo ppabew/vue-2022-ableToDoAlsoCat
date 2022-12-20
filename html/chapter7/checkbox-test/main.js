@@ -3,7 +3,8 @@ var app = new Vue({
   el: '#app',
   data: {
     checkList: ['사과', '배', '바나나'],
-    selectedList: []
+    selectedList: [],
+    flag: true
   },
   computed: {
     allSelected: {
@@ -19,8 +20,8 @@ var app = new Vue({
     },
     testFunction: {
       get: function () {
+        this.checkList
         console.log('test get')
-        console.log(this.selectedList.length)
       },
       set: function () {
         console.log('test set')

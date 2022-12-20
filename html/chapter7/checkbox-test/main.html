@@ -7,7 +7,8 @@
 </head>
 <body>
   <div id="app">
-    <input type="checkbox" v-model="allSelected" />
+    <input type="checkbox" v-model="testFunction"> 테스트
+    <input type="checkbox" v-model="allSelected">
     <label>전체</label>
     <template v-for="item in checkList">
       <input v-model="selectedList" :id="item" :value="item" type="checkbox">
