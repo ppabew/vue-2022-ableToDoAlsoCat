@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
-var app = new Vue({
-  el: '#app',
+new Vue({
+  el: '#app11',
   data: {
     checkList: ['사과', '배', '바나나'],
     selectedList: [],
@@ -21,6 +21,7 @@ var app = new Vue({
     testFunction: {
       get: function () {
         this.checkList
+        this.selectedList
         console.log('test get')
       },
       set: function () {
